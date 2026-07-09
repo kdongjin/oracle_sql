@@ -41,6 +41,7 @@ select * from user_tables;
 select * from user_constraints; 
 select * from user_cons_columns;
 select * from user_sequences;
+select * from user_indexes;
 
 
 -- emp_seq 가 현재 얼마까지 설정되었는지 확인
@@ -94,6 +95,7 @@ select * from user_sequences;
 
 -- dep_seq 삭제하시오.
 drop SEQUENCE dep_seq;
+
 
 
 
