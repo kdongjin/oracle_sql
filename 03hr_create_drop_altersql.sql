@@ -5,6 +5,18 @@ create table EMP01(
     salary number(7,2) 
 );
 
+create table EMP02(
+    empno number(4) ,
+    name VARCHAR2(20) ,
+    salary number(7,2),
+    constraint pk_emp02_no_name primary key(empno, name)
+);
+desc emp02;
+select * from user_constraints where table_name = 'EMP02'; 
+select  * from user_cons_columns where table_name = 'EMP02'; 
+
+drop table emp02;
+
 select * from emp01;
 
 --2. 기존테이블 복사(Employees -> employees2)
